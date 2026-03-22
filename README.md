@@ -1,11 +1,11 @@
-# ⭐  Web Attack Detection using Splunk SIEM
+# Web Attack Detection using Splunk SIEM
 
-## 📌 Overview
+## Overview
 This project demonstrates detection of web-based attacks such as SQL injection and login abuse using centralized log monitoring.
 
 ---
 
-## 🧱 Lab Setup
+## Lab Setup
 
 - Web Application: OWASP Juice Shop  
 - Platform: Docker  
@@ -13,7 +13,7 @@ This project demonstrates detection of web-based attacks such as SQL injection a
 
 ---
 
-## ⚔️ Attack Simulation
+## Attack Simulation
 
 Simulated attacks include:
 
@@ -23,10 +23,10 @@ Simulated attacks include:
 Example payload:
 ' OR 1=1 --
 
-## 📡 Log Pipeline
+##  Log Pipeline
 
 Web Requests → juice.log → Splunk Forwarder → Splunk SIEM
-## 🔍 Detection Queries (Splunk SPL)
+## Detection Queries (Splunk SPL)
 
 ```spl
 index=* source="/home/employee/juice.log"
@@ -34,13 +34,12 @@ index=* source="/home/employee/juice.log"
 | stats count by host
 index=* ("' OR 1=1" OR "admin' --")
 
-📊 Analysis
+Analysis
 Identified repeated login attempts
 Detected suspicious input patterns
 Monitored abnormal web activity
 
-🎯 Outcome
-
+Outcome
 Demonstrated detection of web attacks through SIEM-based log analysis.
 
 🧠 Skills Demonstrated
