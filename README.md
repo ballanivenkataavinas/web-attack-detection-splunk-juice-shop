@@ -42,7 +42,7 @@ Monitored abnormal web activity
 Outcome
 Demonstrated detection of web attacks through SIEM-based log analysis.
 
-🧠 Skills Demonstrated
+ Skills Demonstrated
 Web Security Monitoring
 SIEM Log Analysis
 Attack Detection
